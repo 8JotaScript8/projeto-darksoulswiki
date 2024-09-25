@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=MedievalSharp&family=Uncial+Antiqua&display=swap');
+
+
+
+
+:root {
+    --cor0: #7B6148;
+    --cor1: #865630;
+    --cor2: #423F36;
+    --cor3: #1E1F21;
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', cursive ;
+    --font-darksouls: 'MedievalSharp', cursive
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    background-image: url(img/24402.jpg);
+    background-repeat: no-repeat; /* Evita a repetição */
+    background-attachment: fixed; /* Faz com que a imagem fique fixa ao scrollar */
+    background-position: center; /* Centraliza a imagem */
+}
+
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor0), #2a2822) ;
+    min-height: 150px;
+    text-align: center;
+    padding: 10px;
+}
+
+header > p{
+    color: white;
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.534);
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--font-destaque);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.534);
+}
+
+nav{
+    background-image: linear-gradient(to right, #2a2822, transparent);
+   padding: 10px;
+   
+   box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.21); 
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+nav > a:hover{
+    background-color: var(--cor1);
+    padding: 15px;
+}
+
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.536);
+}
+
+main img{
+    width: 100%;
+}
+
+main img.pequena {
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+
+main img.p_critcs{
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+
+main img.p_soulslike{
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+
+main h1 {
+    color: var(--cor2);
+}
+
+main p{
+    text-align: justify;
+    margin: 15px 0px;
+    line-height: 2em ;
+}
+
+main h1, h2 {
+    font-family: var(--font-darksouls);
+}
+
+main h2{
+    border-bottom: 2px solid ;
+    margin-top: 20px;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: var(--cor2) ;
+    padding: 2px 6px;
+}
+
+main a:hover{
+    text-decoration: underline;
+}
+
+div.video{
+    background-color: var(--cor2);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+a.externo::after{
+    content: "🔗";
+}
+
+aside{
+    color: rgb(0, 0, 0);
+    background-color: var(--cor0);
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.586);
+    
+}
+
+aside h3{
+    background-color: var(--cor3);
+    color: white;
+    padding: 10px;
+    margin: -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > li{
+    padding: 5px;
+    font-weight: bold;
+    list-style-position: inside;
+}
+
+aside p{
+    padding: 10px;
+}
+
+footer{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+    
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
